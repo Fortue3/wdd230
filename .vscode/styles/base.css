@@ -1,0 +1,64 @@
+.container {
+    margin: 0 10%;
+    font-family: 'Montserrat', Tenor sans;
+
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    background-color: rgb(17, 7, 145);
+}
+
+@media screen and (min-width: 32.5em) {
+    h2 {
+        font-size: 2.5em;
+        color: blue;
+        margin: 1rem;
+    }
+}
+
+.img {
+    width: 30%;
+    margin: 10px;
+    float: left;
+}
+
+.img img {
+    width: 200px;
+    height: 300px;
+}
+
+.name {
+    width: 68%;
+    float: right;
+    padding: 20% 100px 0;
+    justify-content: center;
+    text-align: center;
+    align-items: baseline;
+    color: white;
+}
+
+h1 {
+    font-style: underline;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    text-align: center;
+}
+
+footer p {
+    color: rgb(84, 235, 104);
+    padding: 25px 50px;
+    margin-top: 50px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
