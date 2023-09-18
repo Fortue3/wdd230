@@ -41,11 +41,28 @@
 
 h1 {
     font-style: underline;
+    background-color: black;
+    text-align: center;
 }
 
 h2 {
     margin: 0;
     padding: 0;
+    background-color: grey;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    text-align: center;
+}
+
+.nav {
+    background-color: black;
+    text-align: center;
+
 }
 
 .main {
