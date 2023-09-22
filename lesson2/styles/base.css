@@ -22,7 +22,7 @@ body {
 }
 
 .d-p-1,
-.d-p-2, 
+.d-p-2,
 .d-p-3 {
 	grid-column: span 1;
 	background: grey;
@@ -34,7 +34,7 @@ body {
 .d-p-head {
 	margin: 0px -10px 10px;
 	border-top-right-radius: 15px;
-	border-top-left-radius: 15px;  
+	border-top-left-radius: 15px;
 	padding: 3px 20px 0;
 	height: 80px;
 	background-color: cadetblue;
@@ -56,7 +56,7 @@ body {
 	}
 
 	.d-p-1,
-	.d-p-2, 
+	.d-p-2,
 	.d-p-3 {
 		grid-column: span 1;
 		background: #eee;
@@ -84,7 +84,7 @@ body {
 	}
 
 	.d-p-1,
-	.d-p-2, 
+	.d-p-2,
 	.d-p-3 {
 		grid-column: span 1;
 		background: grey;
@@ -98,6 +98,5 @@ body {
 		text-align: center;
 		background-color: cadetblue;
 	}
-	
-}
 
+}
