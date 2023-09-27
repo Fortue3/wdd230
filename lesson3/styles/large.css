@@ -1,0 +1,187 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: #03C988;
+	padding: 5px 0;
+}
+
+.header_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.logo img {
+	width: 80px;
+	height: auto;
+}
+
+.burger-toggle {
+	display: none;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+}
+
+.headings h1 {
+	font-size: 1.5rem;
+}
+
+.m {
+	letter-spacing: 1pt;
+	color: forestgreen;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.nav-links {
+	flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+	color: #00337C;
+	font-size: 24px;
+    margin: 0 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-links-sm {
+	display: none;
+}
+
+.nav-links a:hover {
+    color: #13005A;
+}
+
+.header-date {
+	width: 98%;
+	margin: 10px 0 5px 1%;
+	height: 30px;
+	background-color: #00337C;
+	color: #03C988;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+.social {
+	margin-right: 1.5rem;
+}
+
+.social svg {
+	width: 25px;
+	height: auto;
+}
+
+.main-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+.flex-container {
+	flex: 1;
+	margin-right: 10px;
+}
+
+.hero-sm {
+	display: none;
+}
+
+.event {
+	background-color: lightgrey;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+	min-height: 200px;
+}
+
+.weather {
+	background-color: lightgrey;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+	min-height: 200px;
+}
+
+.join {
+	background-color: lightgrey;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+	min-height: 200px;
+}
+
+.mid-sect {
+	flex: 2;
+	margin-right: 10px;
+}
+
+.hero {
+	background-color: lightgrey;
+	padding: 10px;
+	border: 1px solid #666;
+	margin-bottom: 10px;
+	min-height: 433px;
+}
+
+.news {
+	background-color: lightgrey;
+	padding: 10px;
+	border: 1px solid #666;
+	min-height: 200px;
+}
+
+.sidebar {
+	flex: 1;
+	background-color: lightgrey;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #666;
+}
+
+.spotlight1 {
+	background-color: lightgrey;
+	padding: 10px;
+	border: 1px solid #666;
+	min-height: 200px;
+}
+
+footer {
+	background-color: #03C988;
+	padding: 5px 50px;
+}
+
+.footer-content {
+	color: #00337C;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+}
+
+.footer-text {
+	color: #00337C;
+	text-align: center;
+}

@@ -1,0 +1,29 @@
+@media screen and (max-width: 500px) {
+	.burger-toggle {
+		display: initial;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.main-container {
+		flex-direction: column;
+	}
+
+	.hero-sm {
+		align-self: flex-end;
+	    display: initial;
+	    position: absolute;
+	    cursor: pointer;
+	}
+
+	.mid-sect {
+		flex: -1;
+		margin-bottom: 10px;
+	}
+
+	.footer-content {
+		flex-direction: column;
+	}
+}
