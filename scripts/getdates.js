@@ -1,52 +1,12 @@
-// Select the HTML element to manipulate
-const date1 = document.querySelector("#date1");
-const message = document.querySelector("#emessage");
+const currentYear = new Date().getFullYear();
+document.getElementById('currentYear').textContent = currentYear;
 
-// Try to complete the method with options
-try {
-    const options = {
-        weekday: "",
-        day: "numeric",
-        month: "long",
-        year: "numeric"
-    };
-    date1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>!`;
-} catch (e) {
-    console.log("Error with code or your browser does not support Locale");
-}
 
-// Long hand method ... building day and month names from built-in date methods.
-const daynames = [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-];
-const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "July",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "December"
-];
-const d = new Date();
-const dayName = d.getDay();
-const monthName = d.getMonth() + 1;
-const year = d.getFullYear();
-const hr = d.getHours();
-const mins = d.getMinutes();
-const sec = d.getSeconds();
-const fulldate = `${monthName}/${d.getDate()}/${year} ${hr}:${mins}:${sec}`;
-document.querySelector("#date2").textContent = "last updated:" + fulldate;
-document.querySelector("#myYear").textContent = year;
+// Get the last modified date of the current page
+const lastModified = new Date(document.lastModified);
 
+
+const formattedLastModified = 'Last Modified:' + lastModified.toLocaleDateString('en-UK');
+
+// Display the formatted last modified date in the HTML element
+document.getElementById('lastmodified').textContent = formattedLastModified;

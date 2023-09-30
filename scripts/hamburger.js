@@ -1,9 +1,8 @@
-function toggleMenu() {
-    var navbarMenu = document.getElementById("navbarMenu");
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
 
-    if (navbarMenu.style.display === "none") {
-        navbarMenu.style.display = "flex";
-    } else {
-        navbarMenu.style.display = "none";
-    }
-}
+// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
+});
