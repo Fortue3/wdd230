@@ -1,0 +1,203 @@
+@media all and (max-width: 768px) {
+
+/* =========== Header ===========*/
+	.navbar {
+        flex-direction: column;
+        height: 80px;
+    }
+
+    .navbar .container-icon {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .social {
+    	position: absolute;
+        right: 50px;
+        top: 15px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        background-color: #00337C;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        z-index: 2;
+        display: none;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        border-top: 1px solid white;
+
+    }
+
+    .logo {
+    	position: absolute;
+        left: 15px;
+        top: 5px;
+    }
+
+    .primary-icon {
+    	height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .showmenu {
+		display: block;
+		margin-top: 50px;
+	}
+
+    /*.active {
+        display: block;
+    }*/
+
+/* =============== Main ===================*/
+	.main-container {
+		flex-direction: column;
+		margin-left: 2px;
+		margin-right: 5px;
+	}
+
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		order: 3;
+		margin-right: 0;
+	}
+
+	.join {
+		order: 1;
+		width: 100%;
+	}
+
+	.event {
+		order: 2;
+		width: 60%;
+		margin-right: 5px;
+	}
+
+	.weather {
+		order: 3;
+		width: 39%;
+	}
+
+	.mid-sect {
+		order: 1;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.hero {
+		min-height: 250px;
+		background-image: url('../images/medium.jpg');
+	}
+
+	.hero .btn-join {
+		position: absolute;
+		bottom: 35%;
+		margin-left: 65%;
+		/* right: 40px; */
+	}
+
+	.sidebar {
+		display: flex;
+		justify-content: space-between;
+		order: 2;
+		margin-bottom: 10px;
+	}
+
+	.spotlight1 {
+		width: 50%;
+		
+	}
+
+	.spotlight1:nth-of-type(1) {
+		margin-right: 5px;
+	}
+
+	.spotlight1:nth-of-type(3) {
+		display: none;
+	}
+
+	/*============ discover ============*/
+
+	.discover-main-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.discover-section {
+		width: 100%;
+	}
+
+	.about-us1 {
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-us1 img {
+		width: 95vw;
+		height: auto;
+	}
+
+	.about-us1 .about1-details {
+		margin: 10px 20px;
+	}
+
+	.about1-details p {
+		text-align: justify;
+		line-height: 1.5;
+		color: #fff;
+	}
+
+	.gallery-section {
+		width: 100%;
+		text-align: center;
+	}
+
+	.gallery-section img {
+		width: 300px;
+		height: auto;
+	}
+
+	/*=============== Join ==============*/
+	.join-main-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#form_layout {
+	    width: 93vw;
+	    padding: 10px;
+	}
+
+	.membership-levels {
+		margin-top: 10px;
+		width: 93vw;
+	}
+
+	/* Directory */
+	.card {
+        flex: 0 0 200px;
+    }
+
+	/* Contact */
+	.contact-info-container{
+        width: 90%;
+        padding: 30px 40px 40px 35px ;
+    }
+    .contact-info-container .content .right-side{
+        width: 75%;
+        margin-left: 55px;
+    }
+}

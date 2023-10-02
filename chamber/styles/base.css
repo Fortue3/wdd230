@@ -1,0 +1,138 @@
+@media all and (max-width: 480px) {
+
+	.flex-container {
+		order: 2;
+	}
+
+	.hero {
+		background-image: url('../images/small.jpg');
+	}
+
+	.hero .btn-join {
+		position: absolute;
+		bottom: 35%;
+		margin-left: 55%;
+		/* right: 40px; */
+	}
+
+	.join {
+		display: none;
+	}
+
+	.event {
+		order: 2;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.weather {
+		order: 3;
+		width: 100%;
+	}
+
+	.sidebar {
+		order: 3;
+		flex-direction: column;
+	}
+
+	.spotlight1 {
+		width: 100%;
+	}
+
+	.footer-content {
+		flex-direction: column;
+	}
+
+	.footer-logo {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.footer-social {
+		text-align: center;
+	}
+
+	/*============ discover ============*/
+
+	.discover-main-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.discover-section {
+		width: 100%;
+	}
+
+	.about-us1 {
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-us1 img {
+		width: 95vw;
+		height: auto;
+	}
+
+	.gallery-section {
+		width: 100%;
+		text-align: center;
+	}
+
+	.gallery-section img {
+		width: 300px;
+		height: auto;
+	}
+
+	.gallery-section img:hover {
+		cursor: none;
+		border: none;
+	}
+
+	/* Directory */
+
+	.card {
+        flex: 0 0 250px;
+    }
+
+    .card img {
+        /* max-width: 100%; */
+        height: 200px;
+    }
+
+	/* Contact */
+	.contact-info-container{
+        margin: 40px 5%;
+        height: 100%;
+    }
+
+    .contact-info-container .content{
+        flex-direction: column-reverse;
+    }
+
+   .contact-info-container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact-info-container .content .left-side::before{
+        display: none;
+    }
+    .contact-info-container .content .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-container .right-side .input-box {
+        width: 100%;
+    }
+
+    .work-hours span {
+        font-size: 14px;
+    }
+
+}

@@ -1,4 +1,5 @@
-function lastUpdated() {
-    let a = document.lastModified;
-    document.getElementById("lastmodified").innerHTML = a;
-}
+const date = new Date();
+
+const d = date.toDateString()
+
+document.getElementById('hdate').innerHTML = d 
