@@ -17,6 +17,11 @@
         top: 15px;
     }
 
+	.toogle {
+		margin-top: 7px;
+		margin-left: 17em;
+	}
+
     .social {
     	position: absolute;
         right: 50px;
@@ -43,6 +48,7 @@
     	position: absolute;
         left: 15px;
         top: 5px;
+		margin-left: 5px;
     }
 
     .primary-icon {

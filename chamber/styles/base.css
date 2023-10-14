@@ -1,5 +1,14 @@
 @media all and (max-width: 480px) {
 
+	.social {
+		display: none;
+	}
+
+	.toogle {
+		margin-top: 3px;
+		margin-left: 10em;
+	}
+
 	.flex-container {
 		order: 2;
 	}
@@ -9,8 +18,8 @@
 	}
 
 	.hero .btn-join {
-		position: absolute;
-		bottom: 35%;
+		/* position: absolute; */
+		bottom: 50%;
 		margin-left: 55%;
 		/* right: 40px; */
 	}

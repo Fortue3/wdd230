@@ -4,19 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="Fortunate Kwenda">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chamber of Commerce-Home</title>
-	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles/large.css">
 	<link rel="stylesheet" type="text/css" href="styles/medium.css">
 	<link rel="stylesheet" type="text/css" href="styles/base.css">
-	<link rel="stylesheet" type="text/css" href="styles/small.css">
 </head>
 
 <body>
-	<div id="mode">
-		☑️
-	</div>
 
 	<header>
 		<div class="navbar">
@@ -36,8 +31,12 @@
 				<li class="list-item"><a href="#">Directory</a></li>
 				<li class="list-item"><a href="#">Join</a></li>
 				<li class="list-item"><a href="#">Contact</a></li>
-
 			</ul>
+
+			<div class="toogle">
+				<input type="checkbox" id="dark-mode" class="input">
+				<label for="dark-mode" class="label"></label>
+			</div>
 
 			<div class="social">
 
@@ -142,7 +141,7 @@
 			<section class="join">
 				<a class="btn-join" href="#">Join Us!</a>
 				<p>
-					<!--Discover how to join the chamber of commerce and how it will benefit you or your organization-->
+					Discover how to join the chamber of commerce and how it will benefit you or your organization
 				</p>
 			</section>
 
@@ -209,8 +208,7 @@
 
 	<script type="text/javascript" src="scripts/sidebar.js"></script>
 	<script type="text/javascript" src="scripts/main.js"></script>
-	<script type="text/javascript" src="scripts/date.js"></script>
-	<script type="text/javascript" src="scripts/dark.js"></script>
+	<script src="scripts/theme.js"></script>
 </body>
 
 </html>
