@@ -1,15 +1,9 @@
 /* Reset some default browser styles for consistency */
-body,
-h1,
-h2,
-h3,
-ul,
-li,
-p,
-img {
+body {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 /* Rest of your CSS styles go here */
@@ -37,7 +31,7 @@ header {
 .profile-image {
     width: 90px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 75%;
     border: 5px solid #fff;
 }
 
@@ -51,6 +45,11 @@ header {
     color: white;
     font-size: 3em;
     margin-bottom: 5px;
+}
+
+.home {
+    width: 100%;
+
 }
 
 
@@ -76,6 +75,7 @@ header {
 
 nav {
     background-color: rgb(206, 222, 228);
+
 }
 
 .navigation {
@@ -165,6 +165,7 @@ navigation a:active {
     padding: 10px;
     /* Add padding to the bottom part */
     border: 2px solid black;
+
 }
 
 .map {
@@ -189,22 +190,27 @@ h4 {
     display: none;
 }
 
+
+
 .hero h2 {
     position: absolute;
-    top: 250px;
-    right: 0;
+    top: 400px;
+    right: 200px;
     font-family: 'Comfortaa', 'Shadows Into Light', sans-serif;
-    color: white;
-    background-color: #0c8ede;
+    color: rgb(23, 13, 13);
+    background-color: #c5bebf;
     margin-top: 15px;
-    margin-right: 15px;
+    margin: right 15px;
     padding: 10px;
     border: solid #060204;
     opacity: 50%;
+
+
 
 }
 
 .hero img {
     width: 100%;
     height: auto;
+
 }

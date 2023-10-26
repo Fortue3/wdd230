@@ -1,0 +1,52 @@
+.container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+
+.title {
+  text-align: center;
+  margin: 4rem;
+  font-size: 3.2rem;
+  text-shadow: 3px 3px aqua;
+  background-color: rgb(206, 222, 228);
+
+}
+
+img {
+  border-radius: 10px;
+  display: block;
+  margin: 2rem auto;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  animation: fade 15s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  color: black;
+  text-align: center;
+  position: relative;
+  background-color: rgb(206, 222, 228);
+  font-size: 1.2em;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+#lastmodified {
+  color: black;
+}
