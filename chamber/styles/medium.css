@@ -461,3 +461,11 @@
 		width: 205px;
 	}
 }
+
+aside div {
+	width: 100%;
+	margin: 0px;
+	background-color: #eeeeee;
+	border: 2px solid #bbbbbb;
+	padding: 20px;
+}
