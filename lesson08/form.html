@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+
+</head>
+
+<body>
+    <main>
+        <form action="record.html" method="get">
+            <label for="fname">Username:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" pattern=".{8,}" placeholder="Eight or more characters"><br><br>
+            <label for="pwd2">Re-enter Password:</label>
+            <input type="password2" id="pwd2" name="pwd" pattern=".{8,}" placeholder="Eight or more characters"><br><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-] +@byui\.edu$"
+                placeholder="Please use your 'byui.edu' mail">
+
+            <div class="star-rating">
+                <input type="radio" name="stars" id="star-a" value="5" />
+                <label for="star-a"></label>
+                <input type="radio" name="stars" id="star-b" value="4" />
+                <label for="star-b"></label>
+                <input type="radio" name="stars" id="star-c" value="3" />
+                <label for="star-c"></label>
+                <input type="radio" name="stars" id="star-d" value="2" />
+                <label for="star-d"></label>
+                <input type="radio" name="stars" id="star-e" value="1" />
+                <label for="star-e"></label>
+            </div>
+            <input type="submit">
+        </form>
+    </main>
+
+
+</body>
+
+</html>
