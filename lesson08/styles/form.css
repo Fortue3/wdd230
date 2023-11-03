@@ -69,3 +69,36 @@ label {
         line-height: 21px;
     }
 }
+
+/* css range */
+
+input[type="range"] {
+    width: 27%;
+}
+
+output[for="r"] {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+
+label {
+    display: block;
+}
+
+
+
+#rangevalue {
+    font-size: 2rem;
+    color: navy;
+}
+
+#rangevalues {
+    display: flex;
+    width: 225px;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}

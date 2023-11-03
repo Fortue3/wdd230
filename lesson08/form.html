@@ -10,35 +10,52 @@
 </head>
 
 <body>
+
     <main>
         <form action="record.html" method="get">
-            <label for="fname">Username:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd" pattern=".{8,}" placeholder="Eight or more characters"><br><br>
-            <label for="pwd2">Re-enter Password:</label>
-            <input type="password2" id="pwd2" name="pwd" pattern=".{8,}" placeholder="Eight or more characters"><br><br>
-            <label for="Email">Email:</label>
-            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-] +@byui\.edu$"
-                placeholder="Please use your 'byui.edu' mail">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fname">Username:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" pattern=".{8,}"
+                    placeholder="Eight or more characters"><br><br>
+                <label for="pwd2">Re-enter Password:</label>
+                <input type="password2" id="pwd2" name="pwd" pattern=".{8,}"
+                    placeholder="Eight or more characters"><br><br>
+                <label for="Email">Email:</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-] +@byui\.edu$"
+                    placeholder="Please use your 'byui.edu' mail">
+            </fieldset>
 
-            <div class="star-rating">
-                <input type="radio" name="stars" id="star-a" value="5" />
-                <label for="star-a"></label>
-                <input type="radio" name="stars" id="star-b" value="4" />
-                <label for="star-b"></label>
-                <input type="radio" name="stars" id="star-c" value="3" />
-                <label for="star-c"></label>
-                <input type="radio" name="stars" id="star-d" value="2" />
-                <label for="star-d"></label>
-                <input type="radio" name="stars" id="star-e" value="1" />
-                <label for="star-e"></label>
-            </div>
-            <input type="submit">
+
+
+            <label for="r">Rate this page:</label>
+            <div id="rangevalue">1</div>
+            <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+            </datalist>
+
+
+
+
+            <input type="submit" value="Complete Form">
         </form>
     </main>
 
 
 </body>
+<script src="scripts/rangevalue.js"></script>
 
 </html>
