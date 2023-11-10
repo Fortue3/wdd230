@@ -8,6 +8,11 @@ main {
     position: relative;
 }
 
+header {
+    background-color: blue;
+    text-align: center;
+}
+
 label {
     display: block;
 }
@@ -101,4 +106,9 @@ label {
 
 #rangevalues option {
     flex: 1 1 auto;
+}
+
+footer {
+    background-color: blue;
+    text-align: center;
 }
