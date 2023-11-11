@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1",
+        "companyName": "Shesham Investment",
+        "companyDesc": " Leading in house development ",
+        "companyImg": "images/sheashum.jpeg",
+        "companyAddress": "12 Main Str, Gweru",
+        "email": "sheashum@gmail.com",
+        "contact": 542225849,
+        "website": "http://facebook.com",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "id": "2",
+        "companyName": "Delta Corporation",
+        "companyDesc": "Beverages",
+        "companyImg": "images/Delta.png",
+        "companyAddress": "11 Old Trafford, Gweru",
+        "email": "delta@gmail.com",
+        "contact": 54883865,
+        "website": "http://facebook.com",
+        "membershipLevel": "silver"
+    },
+    {
+        "id": "3",
+        "companyName": "Transerve",
+        "companyDesc": "Motor Maintanance",
+        "companyImg": "images/Transerve.jpeg",
+        "companyAddress": "16 Robert Mugabe Way, Gweru",
+        "email": "transerve@gmail.com",
+        "contact": 776606749,
+        "website": "http://facebook.com",
+        "membershipLevel": "NP"
+    },
+    {
+        "id": "4",
+        "companyName": "Halsteds",
+        "companyDesc": "Hardware Store",
+        "companyImg": "images/Halsteds.jpeg",
+        "companyAddress": "19 Main Street, Gweru",
+        "email": "halsteds@gmail.com",
+        "contact": 776606856,
+        "website": "http://facebook.com",
+        "membershipLevel": "Gold"
+    },
+    {
+        "id": "5",
+        "companyName": "National Foods",
+        "companyDesc": "Food Manufacturer",
+        "companyImg": "images/National Foods.jpeg",
+        "companyAddress": "12 Bristol Road, Gweru",
+        "email": "nationalfood@gmail.com",
+        "contact": 776789749,
+        "website": "http://facebook.com",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "id": "6",
+        "companyName": "Masimba Holdings",
+        "companyDesc": "Constuction Company",
+        "companyImg": "images/Masimba.jpeg",
+        "companyAddress": "18 Link Road, Gweru",
+        "email": "masimba@masimba.com",
+        "contact": 776154949,
+        "website": "http://facebook.com",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "id": "7",
+        "companyName": "J&J Transport",
+        "companyDesc": "Transport and Logistics Company",
+        "companyImg": "images/J & J.jpeg",
+        "companyAddress": "9 Flemming Road, Gweru",
+        "email": "jjtransport@gmail.com",
+        "contact": 786246749,
+        "website": "http://facebook.com",
+        "membershipLevel": "Gold"
+    },
+    {
+        "id": "8",
+        "companyName": "Lesaffre",
+        "companyDesc": "Yeast Manufacturer",
+        "companyImg": "images/lesaffre.jpeg",
+        "companyAddress": "45 Trafford Road, Gweru",
+        "email": "lesaffre@gmail.com",
+        "contact": 7787749249,
+        "website": "http://facebook.com",
+        "membershipLevel": "Silver"
+    },
+    {
+        "id": "9",
+        "companyName": "Victoria Milling Company",
+        "companyDesc": "Grain Milling Company",
+        "companyImg": "images/Victoria Foods.jpeg",
+        "companyAddress": "15 Bristol Road, Gweru",
+        "email": "victoriamilling@gmail.com",
+        "contact": 772478749,
+        "website": "http://facebook.com",
+        "membershipLevel": "NP"
+    },
+    {
+        "id": "10",
+        "companyName": "Swift",
+        "companyDes" : "Transport & Shipping Company",
+        "companyImg": "images/swift.jpeg",
+        "companyAddress": "10 Link Road, Gweru",
+        "email": "swift@swift.com",
+        "contact": 776698449,
+        "website": "http://facebook.com",
+        "membershipLevel": "Gold"
+    }
+]

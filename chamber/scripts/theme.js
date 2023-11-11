@@ -15,7 +15,7 @@ checkbox.addEventListener('change', () => {
     newsSec.classList.toggle('dark');
     sideSec.classList.toggle('dark');
     // joinPageSec.classList.toggle('dark');
-    for(const h3 of h3s) {
+    for (const h3 of h3s) {
         h3.classList.toggle('dark');
     }
 })
