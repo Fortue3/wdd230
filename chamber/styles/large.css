@@ -1525,6 +1525,7 @@ tbody tr:nth-child(even) {
     background-color: #eee;
 }
 
+/*
 .directory-main .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1535,7 +1536,7 @@ tbody tr:nth-child(even) {
 .directory-main .grid section {
     text-align: center;
     align-items: center;
-}
+}*/
 
 .directory-main .grid img {
     border: 1px solid #fff;
