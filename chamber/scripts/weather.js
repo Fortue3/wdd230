@@ -1,27 +1,64 @@
+const apiKey = 'bb06f83ae63888ef53975084692c8460';
+const latitude = 45.6387;
+const longitude = -122.6615;
 
-// ACCESSING ALL THE HTML COMPONENTS REQUIRED TO PERFORM ACTIONS ON.
-let button = document.querySelector('.button')
-let inputvalue = document.querySelector('.inputValue')
-let nameVal = document.querySelector('.name');
-let temp = document.querySelector('.temp');
-let desc = document.querySelector('.desc');
+const APIurl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
+
+const forecastGrid = document.getElementById('forecast-grid');
+
+fetch(APIurl)
+    .then(response => response.json())
+    .then(data => {
+        const forecastData = data.list;
+
+        const groupedData = {};
+        forecastData.forEach(forecast => {
+            const date = forecast.dt_txt.split(' ')[0];
+            if (!groupedData[date]) {
+                groupedData[date] = forecast;
+            }
+        });
+
+        let counter = 0;
+        Object.keys(groupedData).forEach(date => {
+            if (counter >= 3) {
+                return;
+            }
+
+            const forecast = groupedData[date];
+
+            const forecastCard = document.createElement('div');
+            forecastCard.classList.add('forecast-card');
+
+            const dateElement = document.createElement('p');
+            dateElement.textContent = getDayName(date);
+            dateElement.classList.add('headline');
+            forecastCard.appendChild(dateElement);
+
+            const temperature = document.createElement('p');
+            temperature.textContent = Math.round(forecast.main.temp) + '°F';
+            forecastCard.appendChild(temperature);
 
 
-// ADDING EVENT LISTENER TO SEARCH BUTTON  
-button.addEventListener('click', function () {
+            const weatherIconSpan = document.createElement('span');
+            let weatherIcon = forecast.weather[0].icon;
+            weatherIconSpan.innerHTML = `<img class="weather-forcast-img" alt="${temperature.textContent}" src="https://openweathermap.org/img/w/${weatherIcon}.png">`;
+            forecastCard.appendChild(weatherIconSpan);
 
-    // Fection data from open weather API
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue.value}&units=metric&appid=108dd9a67c96f23039937fe6f3c91963`)
-        .then(response => response.json())
-        .then(
-            displayData)
-        .catch(err => alert('Wrong City name'));
+            forecastGrid.appendChild(forecastCard);
 
-})
+            counter++;
+        });
+    })
+    .catch(error => {
+        console.log('Error:', error);
+    });
 
-// Function to diplay weather on html document
-const displayData = (weather) => {
-    temp.innerText = `${weather.main.temp}°C`
-    desc.innerText = `${weather.weather[0].main}`
-
+function getDayName(dateString) {
+    const date = new Date(dateString);
+    const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    return daysOfWeek[date.getDay()];
 }
+
+
+
